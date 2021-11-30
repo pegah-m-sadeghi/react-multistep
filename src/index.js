@@ -121,7 +121,7 @@ export default function MultiStep (props) {
     setButtons(getButtonsState(indx, props.steps.length))
   }
 
-  const next = () => {setStepState(compState + 1); alert('next');}
+  const next = () => setStepState(compState + 1)
   const previous = () => setStepState(compState > 0 ? compState - 1 : compState)
 
   const handleOnClick = evt => {
